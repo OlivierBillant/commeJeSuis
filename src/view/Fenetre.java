@@ -87,7 +87,7 @@ import javax.swing.JButton;
 						if(imc < 18) {
 							monLabel_3.setText(imc_str+" - Vous êtes maigre");
 							monLabel_4.setText("Vous devriez prendre "+String.format("%.2f",-(poids-(25*taille*taille)))+" kg");
-							ImageIcon icon = new ImageIcon("photo/emt.jpg");
+							ImageIcon icon = new ImageIcon(getClass().getClassLoader().getResource("emt.jpg"));
 							monLabel_5.setIcon(icon);
 						}
 						else if(imc < 25) {
@@ -96,7 +96,7 @@ import javax.swing.JButton;
 						else {
 							monLabel_3.setText(imc_str+" - Vous êtes en surpoids");
 							monLabel_4.setText("Vous devriez perdre "+String.format("%.2f",(poids-(25*taille*taille)))+" kg");
-							ImageIcon icon = new ImageIcon("photo/bmi.jpg");
+							ImageIcon icon = new ImageIcon(getClass().getClassLoader().getResource("bmi.jpg"));
 							monLabel_5.setIcon(icon);
 							
 							
