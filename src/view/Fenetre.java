@@ -98,8 +98,6 @@ import javax.swing.JButton;
 							monLabel_4.setText("Vous devriez perdre "+String.format("%.2f",(poids-(25*taille*taille)))+" kg");
 							ImageIcon icon = new ImageIcon(getClass().getClassLoader().getResource("bmi.jpg"));
 							monLabel_5.setIcon(icon);
-							
-							
 						}
 					saisie_1.setText("");
 					saisie_2.setText("");
